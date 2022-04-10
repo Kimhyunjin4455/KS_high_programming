@@ -26,6 +26,7 @@ class Product {
 
   // 변수 앞에 _(언더바)가 붙는 경우에는 외부 함수에서 접근이 불가능해진다. 이 변수를 프라이빗(provite) 변수라고도 한다.
   // 프라이빗(private) 변수에 접근하려면 게터(getter)와 세터(setter)메서드가 필요
+  // 다트의 특성상 프라이빗 변수를 같은 파일 내에서 사용 가능
   setProductMoreInfoWithHomeAppliances(HomeApplicance _homeAppliances) {
     homeApplicance = _homeAppliances;
   }
