@@ -39,7 +39,7 @@ class Product {
     dailyNecessity = _dailyNecessity;
   }
 
-  dynamic get moreInfo {
+  dynamic get moreInfo {   // dynamic 은 할당된 변수값의 종류에 영향없이 타입이 변경되는 
     switch (type) {
       case ProductType.HomeAppliances:
         return homeApplicance;
@@ -52,6 +52,7 @@ class Product {
   // setter, getter 로 값 받기
 }
 void main() {
+  // var은 할당한 값에 의해 타입이 정해짐
   var homeApplianceProduct = Product(
     price: 1000,
     amount: 100,
