@@ -1,4 +1,4 @@
-enum ProductType {
+enum ProductType { // 열거 타입
   HomeAppliances,
   Clothing,
   DailyNecessity
