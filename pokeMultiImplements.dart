@@ -59,11 +59,23 @@ class PokemonInfo implements Pokemon, Trainer, MorePoke{
     print('트레이너의 이름은 ${this.trainerName}이며 나이는 ${this.age}입니다.');
   }
   void getPoke(){
-    print('현재 ${this.getpoke}마리를 데리고 있습니다.');
+    if (this.getpoke >=1 && this.getpoke <=6){
+      print('현재 ${this.getpoke}마리를 데리고 있습니다.');
+    }
+    else{
+      print('올바른 숫자를 입력하세요!');
+    }
   }
   void morePoke(){
-    if (this.getpoke >= 6){print('더 이상 포켓몬을 잡을 수 없습니다.');}
-    else{print('포켓몬을 ${6-this.getpoke}마리 더 잡을 수 있습니다.');}
+    if (this.getpoke == 6){
+      print('더 이상 포켓몬을 잡을 수 없습니다.');
+    }
+    else if( this.getpoke >=1 && this.getpoke < 6){
+      print('포켓몬을 ${6-this.getpoke}마리 더 잡을 수 있습니다.');
+    }
+    else{
+      print('올바른 숫자를 입력하세요!');
+    }
   }
 }
 
@@ -74,5 +86,7 @@ void main(){
   pokeInfo.trInfo();
   pokeInfo.getPoke();
   pokeInfo.morePoke();
-  
+  PokemonInfo('이상해씨', '슈퍼볼', 'nonamed', 22, -1).getPoke();
+  PokemonInfo('이상해씨', '슈퍼볼', 'nonamed', 22, 2).morePoke();
+  PokemonInfo('이상해씨', '슈퍼볼', 'nonamed', 22, 6).getPoke();
 }
