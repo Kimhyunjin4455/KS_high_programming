@@ -38,7 +38,7 @@ class SnackBarTest extends StatelessWidget {
                   'show me',
                 style: TextStyle(color: Colors.white),
                 ),
-                color: Colors.red,
+                color: Colors.blue[200],
                 onPressed: () {
                   Scaffold.of(ctx).showSnackBar(SnackBar(
                     content: Text('Hello'),
