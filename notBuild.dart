@@ -38,7 +38,7 @@ class SnackBarTest extends StatelessWidget { ////3. SnackBarTest라는 커스텀
                 ),
                 color: Colors.blue[200],
                 onPressed: () {
-                  Scaffold.of(context).showSnackBar(SnackBar( // 5. 에러 발생 (ppt의 에뮬레이터 캡쳐본이 서로 다름), MyApp의 context를 사용했다고 
+                  Scaffold.of(context).showSnackBar(SnackBar( // 5. 에러 발생 (ppt의 에뮬레이터 캡쳐본이 서로 다름), MyApp의 context를 사용했다고 표시됨
                                                               // 6. Scaffold위젯이 위젯 트리 상에서 어디에 위치한지 알기 위해서 이 위젯은 context룰 참조해야함
                                                               // 7. 그러나, Scaffold위젯의 context는 위젯 트리 내에서 Scaffold 위젯이 어디에 위치한지 정보를 가지고 있지 않음
                     content: Text('Hello HJ'),                // 8. 이 에러 해결하기 위해 Builder Widget 사용
