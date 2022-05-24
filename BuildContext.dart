@@ -31,7 +31,8 @@ class SnackBarTest extends StatelessWidget { //3. SnackBarTest라는 커스텀 �
           centerTitle: true,
         ),
         body: Builder(   // start
-          builder: (BuildContext ctx) { // 1. 빌더 위젯을 통해 바로 위 Scaffold위젯의 context(ctx로 명명)를 찾을 수 있어서 올바르게 실행됨
+          builder: (BuildContext ctx) {   // 0. Scaffold위젯의 context(ctx로 명명)을 생성
+                                          // 1. 빌더 위젯을 통해 바로 위 Scaffold위젯의 context(ctx로 명명)를 찾을 수 있어서 올바르게 실행됨
             return Center(
               child: FlatButton(
                 child: Text(
