@@ -130,18 +130,20 @@ class MySnackBar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Center(
-            child: Column(
-              children:[
-                Image.asset('assets/pikamove2.gif',
-                height: 100,
-                width: 80,)
-              ],
-            ),
-            ),
+            child: Transform.scale(scale: 2.2 ,
+                child: Image(image: AssetImage('assets/pikamove2.gif'),
+                    height: 50,
+                    width: 50,
+                ),
 
+            ),
+          ),
+          SizedBox(
+            height: 35,
+          ),
           Center(
             child: RaisedButton(
-              child: Text('show me',
+              child: Text('touch',
                 style: TextStyle(
                     color: Colors.white
                 ),
@@ -150,14 +152,14 @@ class MySnackBar extends StatelessWidget {
               onPressed: (){
                 Scaffold.of(context)
                     .showSnackBar(SnackBar(
-                    content: Text('Hellow',
+                    content: Text('pika pi   \\\\ >-< //',
                     textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white
                       ),
                     ),
                   backgroundColor: Colors.amber[300],
-                  duration: Duration(milliseconds: 500),
+                  duration: Duration(milliseconds: 800),
                 ),
                 ); //context만 쓰면 grade의 컨텍스트임
               },
@@ -217,7 +219,7 @@ class MySnackBar extends StatelessWidget {
               SizedBox(
                 width: 10.0,
               ),
-              Text('iron tail',
+              Text('아이언 테일',
                 style: TextStyle(
                     fontSize: 16.0,
                     letterSpacing: 1.0
@@ -230,7 +232,7 @@ class MySnackBar extends StatelessWidget {
               SizedBox(
                 width: 10.0,
               ),
-              Text('thunder',
+              Text('볼트태클',
                 style: TextStyle(
                     fontSize: 16.0,
                     letterSpacing: 1.0
@@ -243,7 +245,7 @@ class MySnackBar extends StatelessWidget {
               SizedBox(
                 width: 10.0,
               ),
-              Text('10**5 volt',
+              Text('10만 볼트',
                 style: TextStyle(
                     fontSize: 16.0,
                     letterSpacing: 1.0
@@ -256,7 +258,23 @@ class MySnackBar extends StatelessWidget {
               SizedBox(
                 width: 10.0,
               ),
-              Text('run',
+              Text('전광석화',
+                style: TextStyle(
+                    fontSize: 16.0,
+                    letterSpacing: 1.0
+                ),),
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: <Widget>[
+              Icon(Icons.add_circle_outline),
+              SizedBox(
+                width: 10.0,
+              ),
+              Text('도구: 전기구슬',
                 style: TextStyle(
                     fontSize: 16.0,
                     letterSpacing: 1.0
