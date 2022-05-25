@@ -30,7 +30,7 @@ class SnackBarTest extends StatelessWidget { //3. SnackBarTest라는 커스텀 �
           title: Text("BuildContext ex"),
           centerTitle: true,
         ),
-        body: Builder(   // start
+        body: Builder(   // start >> 새로운 context로 새로운 위젯을 만든다
           builder: (BuildContext ctx) {   // 0. 빌더 위젯을 통해 Scaffold 위젯 내부에 context(ctx로 명명)을 생성
                                           // 1. 빌더 위젯을 통해 context(ctx로 명명)를 찾을 수 있어서 올바르게 실행됨
             return Center(                // Flutter에서 모든 위젯은 builder() 함수를 가지고 인자값으로 context(위치 정보 포함)를 전달
