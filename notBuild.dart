@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget { //커스텀 위젯 MyApp
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) { //1. flutter에서 모든 위젯은 build method를 가지고 있다.
-    return MaterialApp( // 앱으로서 기능을 할 수 있게 해주는 
+    return MaterialApp( // 앱으로서 기능을 할 수 있게 해주는 위젯
         title: '2017748033',
         theme: ThemeData(
           primarySwatch: Colors.blue,
