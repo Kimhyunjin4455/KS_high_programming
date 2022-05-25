@@ -4,6 +4,8 @@ void main() {
   runApp(MyApp());
 }
 
+//앱에서 위젯은 특정한 기능을 담당한 부품이라고 볼 수 있다. 앱에서 위젯은 클래스로 구현하고 이를 상속 받는 다양한 위젯이 있다
+
 class MyApp extends StatelessWidget { //커스텀 위젯 MyApp
   // This widget is the root of your application.
   @override
