@@ -42,7 +42,7 @@ class SnackBarTest extends StatelessWidget { //3. SnackBarTest라는 커스텀 �
                 color: Colors.blue[200],
                 onPressed: () {
                   Scaffold.of(ctx).showSnackBar(SnackBar(
-                    content: Text('Hello'),
+                    content: Text('Hello HJ'),
                   ));
                 },
 
